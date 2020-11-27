@@ -13,10 +13,10 @@ public class StartSelenium {
         webDriver.get("https://home.testing-studio.com/");
         webDriver.findElement(By.xpath("//span[contains(text(),'登录')]")).click();
     }
-//    @Test
-//    void startSeleniumTwo(){
-//        WebDriver webDriver  = new ChromeDriver();
-//        webDriver.get("https://www.baidu.com/");
-//    }
+    @Test
+    void startSeleniumTwo(){
+        WebDriver webDriver  = new ChromeDriver();
+        webDriver.get("https://www.baidu.com/");
+    }
 
 }
