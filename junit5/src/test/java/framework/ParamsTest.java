@@ -90,7 +90,7 @@ public class ParamsTest {
     }
     @ParameterizedTest
     @MethodSource
-        //数据举动测试步骤searchStepsTest
+        //数据驱动测试步骤searchStepsTest
     void searchStepsTest(TestCase testCase){
         System.out.println(testCase);
         testCase.run();
@@ -105,7 +105,7 @@ public class ParamsTest {
     }
 
 //    @AfterAll
-//    void exitTest(){
+//    static void exitTest(){
 //        WebDriver driver = new ChromeDriver();
 //        driver.quit();
 //    }

@@ -27,6 +27,10 @@ public class TestCase {
             if (step.keySet().contains("chrome")){
                 driver = new ChromeDriver();
             }
+            if(step.keySet().contains("quit")){
+                driver.quit();
+            }
+
             if (step.keySet().contains("implicitly_wait")){
                 driver.manage().timeouts().implicitlyWait(
                         (int) step.getOrDefault("implicitly_wait",5), TimeUnit.SECONDS );
