@@ -98,7 +98,7 @@
              <artifactId>slf4j-nop</artifactId>
              <version>1.7.2</version>
          </dependency>
-
+<!--        需要启用allure查看报告的功能,取消次依赖注解-->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
